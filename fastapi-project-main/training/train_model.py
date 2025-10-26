@@ -50,4 +50,4 @@ rf_model = Pipeline(steps=[
 rf_model.fit(X_train, y_train)
 
 os.makedirs(MODEL_DIR, exist_ok=True)
-joblib.dump(rf_model, MODEL_PATH)
+joblib.dump(rf_model, MODEL_PATH)# Training pipeline ready
