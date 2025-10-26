@@ -1,20 +1,40 @@
 # 🚗 Car Price Prediction API
 
-This project is a **Machine Learning-powered API** built using **FastAPI** to predict the selling price of a used car based on its characteristics.
+This project is a **Machine Learning-powered web API** developed using **FastAPI**, a modern, high-performance Python framework for building RESTful services.  
+FastAPI provides automatic data validation, type-hint support, and a built-in interactive API documentation (Swagger UI), making it ideal for deploying machine learning models efficiently and at scale.
+
+---
+
+## 🧠 Project Overview
+
+The **Car Price Prediction API** predicts the **selling price of used cars** based on multiple input features such as brand, manufacturing year, mileage, fuel type, and transmission.  
+The model is trained on a curated dataset using regression techniques, containerized with Docker, and equipped with caching, authentication, and monitoring features for production readiness.
 
 ---
 
 ## 📦 Project Features
 
-- 🔐 **Authentication**: JWT-based token auth and API key validation
-- 🧠 **ML Model Prediction**: Trained model predicts used car prices
-- ⚡ **Redis Caching**: Avoid redundant model computation
-- 📈 **Monitoring Ready**: Prometheus metrics + Grafana dashboards
-- 🐳 **Dockerized Setup**: Simplified deployment with Docker Compose
-- ☁️ **Cloud Deployment**: Easily deploy to [Render](https://render.com)
+- 🔐 **Authentication:** JWT-based token authentication and API key validation  
+- 🧮 **Model Prediction:** Pretrained ML model predicts car prices via REST endpoints  
+- ⚡ **Redis Caching:** Speeds up responses by avoiding redundant model computations  
+- 📊 **Monitoring Ready:** Integrated **Prometheus metrics** and **Grafana dashboards** for observability  
+- 🐳 **Dockerized Setup:** Simplified local development and deployment using Docker Compose  
+- ☁️ **Cloud Deployment:** Easily deployable on **Render** using the included `render.yaml`  
 
 ---
 
+## 🧰 Tech Stack
+
+| Category | Technologies |
+|-----------|---------------|
+| **Language & Framework** | 🐍 Python, ⚡ FastAPI |
+| **Machine Learning** | 🧠 Scikit-learn, pandas, NumPy |
+| **Data Storage** | 🗄️ CSV, Redis (for caching) |
+| **Containerization** | 🐳 Docker, Docker Compose |
+| **Monitoring & Metrics** | 📈 Prometheus, Grafana |
+| **Cloud Deployment** | ☁️ Render |
+
+---
 ## 🧠 Model Input Variables
 
 The prediction model expects the following input features:
@@ -39,10 +59,9 @@ The prediction model expects the following input features:
 ## 🚀 Getting Started (Local)
 
 ### 1. Clone the Repository
-
 ```bash
-git clone https://github.com/your-username/fastapi-project.git
-cd fastapi-project
+git clone https://github.com/<your-username>/Software-Engineering-Projects.git
+cd fastapi-project-main
 ```
 
 ### 2. Set Environment Variables
@@ -61,37 +80,18 @@ docker-compose up --build
 
 ### 4. Access Interfaces
 
-- FastAPI Docs: http://localhost:8000/docs
-- FastAPI Metrics: http://localhost:8000/metrics
-- Prometheus UI: http://localhost:9090
-- Grafana UI: http://localhost:3000
+- FastAPI Docs: http://localhost:8000/docs → FastAPI’s interactive Swagger UI
+- FastAPI Metrics: http://localhost:8000/metrics → Prometheus endpoint for monitoring
+- Prometheus UI: http://localhost:9090 → Prometheus dashboard
+- Grafana UI: http://localhost:3000 → Grafana monitoring UI
 
 ---
 
-## 🚀 Deployment on Render (API only)
-
-1. Push code to GitHub
-2. Add render.yaml to the project root
-3. Create a new Web Service on Render
-4. Include environment variables
-
----
-
-## 🤝 Contributing
-
-Feel free to fork this repo, open issues, and submit pull requests.
+## 🚀 Deployment on Render
+1.	Push your project to GitHub
+2.	Add the included render.yaml file to the root of your repo
+3.	Create a new Web Service on Render
+4.	Add environment variables from the local setup
+5.	Deploy 🚀
 
 ---
-
-## 👨‍💻 Author
-
-Made with ❤️ by Misbah
-
----
-
-## 😇 Connect
-
-Feel free to connect:
-- [Email](mailto:misbahullahsheriff@gmail.com)
-- [LinkedIN](https://www.linkedin.com/in/mohammed-misbahullah-sheriff/)
-# FastAPI Car Price Prediction API
