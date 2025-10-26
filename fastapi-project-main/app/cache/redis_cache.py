@@ -15,4 +15,4 @@ def get_cached_prediction(key: str):
 
 
 def set_cached_prediction(key: str, value: dict):
-    redis_client.set(key, str(value))
+    redis_client.set(key, str(value))# Redis cache integration complete
